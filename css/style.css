@@ -1156,3 +1156,11 @@ background:#2C3E50;
 .setting_panel .color_lists span#magenta_color{
 background:#8E44AD;
 }
+
+@media screen and (max-width:  480px){
+  /*#home{*/
+    .welcome-text h2 {
+      font-size: 40px;
+    }
+  /*}*/
+}
