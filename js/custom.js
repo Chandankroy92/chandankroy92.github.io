@@ -98,7 +98,7 @@
 			var $anchor = $(this);
 			$('html').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top - 50
-			}, 1500, 'easeInOutExpo');
+			}, 500, 'easeInOutExpo');
 			event.preventDefault();
 		});
 	});
@@ -158,7 +158,7 @@ $(function() {
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 500);
         return false;
       }
     }
