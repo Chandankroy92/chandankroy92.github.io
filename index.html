@@ -720,25 +720,25 @@
     $('.print-cv').on('click', function () {
       document.getElementById("pdf-chandan").contentWindow.print();
     });
-    $('form').submit(function (event) {
-      event.preventDefault();
-      var name = $('input[name=fullname]').val();
-      var email = $('input[name=email]').val();
-      var message = $('textarea[name=message]').val();
-      $.ajax({
-        type: 'post',
-        url: 'https://chandankroy92.github.io/mailer.php',
-        dataType: 'text',
-        data: {name: name, email: email, message: message},
-        beforeSend: function () {
-          $('.preload-submit').removeClass('hidden');
-        },
-        success: function(response){
-          $('.preload-submit').addClass('hidden');
-          $('.message-submit').text(response);
-        }
-      });
-    });
+    // $('form').submit(function (event) {
+    //   event.preventDefault();
+    //   var name = $('input[name=fullname]').val();
+    //   var email = $('input[name=email]').val();
+    //   var message = $('textarea[name=message]').val();
+    //   $.ajax({
+    //     type: 'post',
+    //     url: 'https://chandankroy92.github.io/mailer.php',
+    //     dataType: 'text',
+    //     data: {name: name, email: email, message: message},
+    //     beforeSend: function () {
+    //       $('.preload-submit').removeClass('hidden');
+    //     },
+    //     success: function(response){
+    //       $('.preload-submit').addClass('hidden');
+    //       $('.message-submit').text(response);
+    //     }
+    //   });
+    // });
   </script>
 </body>
 
